@@ -1,10 +1,10 @@
-import time
+import math
 
 def main():
-  try:
-      # This will work in Python 3.6 but not in Python 3.8,
-      # where time.clock() has been removed.
-      start_time = time.clock()
-      print("time.clock() value:", start_time)
-  except AttributeError:
-      print("time.clock() is not available in your Python version. Only available in Python 3.6.")
+    numbers = [2, 3, 4, 5]
+    try:
+        # Calculate the product of all numbers in the list
+        product = math.prod(numbers)
+        print(f"The product of {numbers} is {product}.")
+    except AttributeError:
+        print("math.prod() is not available in your Python version. It requires Python 3.8 or newer.")

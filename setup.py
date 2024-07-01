@@ -15,7 +15,7 @@ setup(
         'License :: OSI Approved :: MIT License',  # Assuming your project is MIT licensed
         'Operating System :: OS Independent',
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.8',  # This specifies that your project is compatible with Python 3.6 up to but not including 3.8
     install_requires=[
         # List your project's dependencies here.
         # For example: 'requests>=2.19.1',

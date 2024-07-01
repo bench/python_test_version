@@ -1,10 +1,20 @@
-import math
 
 def main():
-    numbers = [2, 3, 4, 5]
+    original_string = "HelloWorld"
+    prefix = "Hello"
+    suffix = "World"
+
     try:
-        # Calculate the product of all numbers in the list
-        product = math.prod(numbers)
-        print(f"The product of {numbers} is {product}.")
+        # Remove the prefix
+        without_prefix = original_string.removeprefix(prefix)
+        print(f"Original: '{original_string}', without prefix: '{without_prefix}'")
+
+        # Remove the suffix
+        without_suffix = original_string.removesuffix(suffix)
+        print(f"Original: '{original_string}', without suffix: '{without_suffix}'")
     except AttributeError:
-        print("math.prod() is not available in your Python version. It requires Python 3.8 or newer.")
+        print("str.removeprefix() and str.removesuffix() are not available in your Python version. They require Python 3.10 or newer.")
+
+
+if __name__ == '__main__':
+   main()

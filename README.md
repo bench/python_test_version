@@ -1,15 +1,13 @@
 # python version project test
 
-**Compatibility: 3.8 or newer**
+**Compatibility: 3.10 or newer**
 
 ### Details
 
-One of the changes in the standard library that came with Python 3.8 is the introduction of the `math.prod()` function.
-
-This function calculates the product of all the items in an iterable, such as a list.
-
-This function is not available in Python 3.6, making it a good example of code that is compatible with Python 3.8 but not with Python 3.6.
-
+In Python 3.10, one of the notable additions to the standard library is the `str.removeprefix()` and `str.removesuffix()` string methods.
+These methods provide a straightforward way to remove a prefix or suffix from a string, respectively, if it exists.
+Prior to Python 3.10, achieving similar functionality required more verbose code or custom utility functions.
+The code is main.py will work in Python 3.10 but not in Python 3.8.
 
 ### How to
 
